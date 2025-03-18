@@ -5,7 +5,7 @@ let i = 1;
 
 for (let i = 1; i <= 100; i++) {
 
-    if (i % 3 ===0 && i % 5 === 0) {
+    if (i % 3 === 0 && i % 5 === 0) {
         console.log("FizzBuzz");
     }
     else if (i % 3 === 0) {
@@ -16,7 +16,7 @@ for (let i = 1; i <= 100; i++) {
     else if (i % 5 === 0) {
         console.log("Buzz");
 
-    }  else {
+    } else {
         console.log(i);
     }
 }
@@ -34,13 +34,13 @@ function isPrime(num) {
     if (num <= 1) return false;
     if (num === 2) return true;
     for (let i = 2; i <= Math.sqrt(num); i++) {
-      if (num % i === 0) return false;
+        if (num % i === 0) return false;
     }
     return true;
-  }
+}
 
 let n = 555555555;
-for (let candidate = n+1; ; candidate++) {
+for (let candidate = n + 1; ; candidate++) {
     if (isPrime(candidate)) {
         console.log(`Next prime after ${n} is: ${candidate}`);
         break;
@@ -51,7 +51,7 @@ for (let candidate = n+1; ; candidate++) {
 //oh man
 
 const csvData =
-`ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19
+    `ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19
 \n63,Blaine,Quiz Master,58\n98,Bill,Doctor's Assistant,26`;
 
 const rows = csvData.split('\n');
@@ -70,7 +70,7 @@ console.log("Parsed Data:");
 parsedData.forEach(row => console.log(row));
 
 const ssvData =
-`Index,Mass (kg),Spring 1 (m),Spring 2 (m)
+    `Index,Mass (kg),Spring 1 (m),Spring 2 (m)
 \n1,0.00,0.050,0.050\n2,0.49,0.066,0.066
 \n3,0.98,0.087,0.080\n4,1.47,0.116,0.108
 \n5,1.96,0.142,0.138\n6,2.45,0.166,0.158
