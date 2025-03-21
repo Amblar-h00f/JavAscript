@@ -78,9 +78,9 @@ const ssvData =
 \n9,3.92,0.226,0.205\n10,4.41,0.238,0.232`
 
 
-const ows = ssvData.split('\n');
+const rows = ssvData.split('\n');
 
-const eaders = ows[0].split(',');
+const headers = rows[0].split(',');
 
 const arsedData = ows.slice(1).map(ow => {
     const values = ow.split(',');
@@ -89,6 +89,6 @@ const arsedData = ows.slice(1).map(ow => {
         return obj;
     }, {});
 });
-console.log("eaders:", eaders);
-console.log("arsed Data:");
-arsedData.forEach(ow => console.log(ow));
+console.log("headers:", eaders);
+console.log("Parsed Data:");
+ParsedData.forEach(ow => console.log(ow));
